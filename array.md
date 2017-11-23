@@ -28,8 +28,12 @@ console.log(sliced);
 // expected output: camel,duck
 ```
 
+
+
+
+
 ### Array.isArray()
-The Array.isArray() function determines whether the passed value is an Array.
+The `Array.isArray()` function determines whether the passed value is an Array.
 
 ```
 Array.isArray([1, 2, 3]);  // true
@@ -37,6 +41,22 @@ Array.isArray({foo: 123}); // false
 Array.isArray('foobar');   // false
 Array.isArray(undefined);  // false
 ```
+
+### map()
+The `map()` method creates a new array with the results of calling a provided function on every element in the calling array.
+
+```
+// create an array
+var numbers = [1, 4, 9, 16];
+
+// call map(), passing a function
+var mapped = numbers.map(function(x) { return x * 2 });
+
+// log the result
+console.log(mapped);
+// expected output: 2,8,18,32
+```
+
 
 
 
