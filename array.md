@@ -100,7 +100,9 @@ The `map()` method creates a new array with the results of calling a provided fu
 var numbers = [1, 4, 9, 16];
 
 // call map(), passing a function
-var mapped = numbers.map(function(x) { return x * 2 });
+var mapped = numbers.map(function(x) {
+  return x * 2 
+});
 
 // log the result
 console.log(mapped);
