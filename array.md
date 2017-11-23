@@ -13,6 +13,7 @@ myFish.splice(2, 1); // remove 1 item at 2-index position (that is, "drum")
 // myFish is ["angel", "clown", "mandarin", "sturgeon"]
 ```
 
+
 ### slice()
 The `slice()` method returns a shallow copy of a portion of an array into a new array object selected from begin to end (end not included). The original array will not be modified.
 
@@ -29,7 +30,35 @@ console.log(sliced);
 ```
 
 
+### pop()
+The `pop()` method removes the last element from an array and returns that element. This method changes the length of the array.
 
+```
+// create an array
+var brassicaOleracea = ['brocolli', 'cauliflower', 'cabbage', 'kale', 'tomato']
+
+// call pop(), to pop the last element
+brassicaOleracea.pop();
+
+// log the result
+console.log(brassicaOleracea);
+// expected output: brocolli,cauliflower,cabbage,kale
+```
+
+
+### push()
+The `push()` method adds one or more elements to the end of an array and returns the new length of the array.
+
+```
+var numbers = [1, 2, 3];
+numbers.push(4);
+
+console.log(numbers); // [1, 2, 3, 4]
+
+numbers.push(5, 6, 7);
+
+console.log(numbers); // [1, 2, 3, 4, 5, 6, 7]
+```
 
 
 ### Array.isArray()
