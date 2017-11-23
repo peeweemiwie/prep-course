@@ -72,6 +72,15 @@ console.log(a); // [2, 3]
 console.log(b); // 1
 ```
 
+### unshift()
+The `unshift()` method adds one or more elements to the beginning of an array and returns the new length of the array.
+
+```
+var a = [1, 2, 3];
+a.unshift(4, 5);
+
+console.log(a); // [4, 5, 1, 2, 3]
+```
 
 ### Array.isArray()
 The `Array.isArray()` function determines whether the passed value is an Array.
