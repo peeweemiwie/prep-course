@@ -61,6 +61,18 @@ console.log(numbers); // [1, 2, 3, 4, 5, 6, 7]
 ```
 
 
+### shift()
+The `shift()` method removes the first element from an array and returns that element. This method changes the length of the array.
+
+```
+var a = [1, 2, 3];
+var b = a.shift();
+
+console.log(a); // [2, 3]
+console.log(b); // 1
+```
+
+
 ### Array.isArray()
 The `Array.isArray()` function determines whether the passed value is an Array.
 
