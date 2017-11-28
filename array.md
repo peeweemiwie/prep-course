@@ -18,15 +18,12 @@ myFish.splice(2, 1); // remove 1 item at 2-index position (that is, "drum")
 The `slice()` method returns a shallow copy of a portion of an array into a new array object selected from begin to end (end not included). The original array will not be modified.
 
 ```
-// create an array
 var a = ['ant', 'bison', 'camel', 'duck', 'elephant'];
 
 // call slice(), passing start and end indexes
 var sliced = a.slice(2, 4);
 
-// log the result
-console.log(sliced);
-// expected output: camel,duck
+console.log(sliced);  // camel,duck
 ```
 
 
@@ -34,15 +31,9 @@ console.log(sliced);
 The `pop()` method removes the last element from an array and returns that element. This method changes the length of the array.
 
 ```
-// create an array
 var brassicaOleracea = ['brocolli', 'cauliflower', 'cabbage', 'kale', 'tomato']
-
-// call pop(), to pop the last element
 brassicaOleracea.pop();
-
-// log the result
-console.log(brassicaOleracea);
-// expected output: brocolli,cauliflower,cabbage,kale
+console.log(brassicaOleracea); // brocolli,cauliflower,cabbage,kale
 ```
 
 
@@ -81,6 +72,18 @@ a.unshift(4, 5);
 
 console.log(a); // [4, 5, 1, 2, 3]
 ```
+
+### join()
+The join() method joins all elements of an array (or an array-like object) into a string and returns this string.
+
+```
+var elements = ['Fire', 'Wind', 'Rain'];
+var resultWithDash = elements.join('-');
+console.log(resultWithDash);  // Fire-Wind-Rain
+var resultWithEmptySpace = elements.join(' ');
+console.log(resultWithEmptySpace); // Fire Wind Rain
+```
+
 
 ### Array.isArray()
 The `Array.isArray()` function determines whether the passed value is an Array.
