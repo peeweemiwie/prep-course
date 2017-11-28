@@ -99,3 +99,73 @@ function helperFunc() {
 testTwo()
 
 ////////////////////////
+
+function indexOf(arr, elm){
+  for(var i = 0; i < arr.length; i++){
+    if(arr[i] === elm){
+      return i;
+    } 
+  }
+  return -1;
+}
+indexOf([1,2,3], 2)    // => 1
+indexOf(["hello","world"], "goodbye")    // => -1
+
+////////////////////////
+
+var myZoo = [
+  ["King Kong", ["gorilla", 42]],
+  ["Nemo", ["fish", 5]],
+  ["Punxsutawney Phil", ["groundhog", 11]]
+];
+
+
+function zooInventory(arr){
+for(var i = 0; i < arr.length; i++){
+  var animalName = arr[i][0];
+  var animalSubArr = arr[i][1];
+  var animalSpecies = animalSubArr[0];
+  var animalAge = animalSubArr[1];
+  console.log(`${animalName} the ${animalSpecies} ${animalAge}`)
+}
+}
+zooInventory(myZoo);
+// King Kong the gorilla is 42
+// Nemo the fish is 5
+// Punxsutawney Phil the groundhog is 11
+
+function flatten(arr){
+  var flatArray = [];
+  for(var i )
+}
+
+
+///////////////////
+
+function makeGrid(column, row){
+  var newGrid = [];
+  var newRow = [];
+  for(var i = 1; i < column+1; i++){
+    newRow.push(i); 
+    
+  } 
+  for(var j = 0; j < row; j++){ 
+      newGrid.push(newRow)
+    }
+  console.log(newGrid)
+}
+makeGrid(3,4);
+
+///////////////////
+
+
+
+
+
+
+
+
+
+
+
+
