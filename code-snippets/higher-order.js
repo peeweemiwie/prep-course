@@ -81,8 +81,8 @@ repeat = (times, doSomething) => {
   }
 }
 
-cl = (elem1, elem2) => {
-  console.log(elem1, elem2);
+cl = (elem1) => {
+  console.log(elem1);
 }
 
 // repeat(10, (el) => {
@@ -91,11 +91,23 @@ cl = (elem1, elem2) => {
 //   cl('?')
 // })
 
-repeat(10, (n) => {
-  unless(n % 2, () => {
-    cl(n, "is even");
-  });
-  doif(n % 2, () => {
-    cl(n, 'is odd');
-  })
-});
+// repeat(10, (n) => {
+//   unless(n % 2, () => {
+//     cl(n, "is even");
+//   });
+//   doif(n % 2, () => {
+//     cl(n, 'is odd');
+//   })
+// });
+
+const array1 = [1, 2, 3, 4];
+
+const reducer = (accumulator, currentValue) => accumulator + currentValue;
+
+// 1 + 2 + 3 + 4
+cl(array1.reduce(reducer));
+// expected output: 10
+
+// 5 + 2 + 3 + 4
+cl(array1);
+cl(array1.reduce(reducer, 5));
