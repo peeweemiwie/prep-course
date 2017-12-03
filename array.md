@@ -95,7 +95,7 @@ Array.isArray('foobar');   // false
 Array.isArray(undefined);  // false
 ```
 
-### map()
+### Array.map()
 The `map()` method creates a new array with the results of calling a provided function on every element in the calling array.
 
 ```
@@ -110,6 +110,15 @@ var mapped = numbers.map(function(x) {
 // log the result
 console.log(mapped);
 // expected output: 2,8,18,32
+```
+ 
+### Array.filter()
+```
+const words = ["spray", "limit", "elite", "exuberant", "destruction", "present", "happy"];
+
+let longWords = words.filter(word => word.length > 6);
+
+// Filtered array longWords is ["exuberant", "destruction", "present"]
 ```
 
 
