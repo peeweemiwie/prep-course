@@ -1,0 +1,50 @@
+
+// console.log('sudogku', sudokuGrid)
+// console.log('col',arrColumn)
+// console.log('cube',arrCube)
+
+// assignNum = () => {
+//   let currIndex = findIndex() + 1;
+//   let currRow = Math.floor(currIndex / 9);
+//   let currColumn = currIndex % 9;
+//   let currCube = Math.floor(currIndex / 3);
+  
+//   console.log(currIndex, currRow, currColumn, currCube)
+// }
+// assignNum();
+//console.log(shuffledArr)
+
+  //cl(elem)
+  // findAvailNum = shuffledArr.filter(function(shuffledArr) {
+    // return arrCube[currCube].indexOf(shuffledArr[0]) === -1 
+    // && sudokuGrid[currRow].indexOf(shuffledArr[0]) === -1 
+    // && arrColumn[currColumn].indexOf(shuffledArr[0]) === -1;
+  // }); 
+  
+  //findAvailNum(shuffledArr[0])
+  // cl(arrCube[currCube].indexOf(shuffledArr[0]))
+  // cl(arrCube[currCube])
+  // cl(sudokuGrid[currRow])
+  // cl(arrColumn[currColumn])
+
+// let currCube = (currElem) => {
+
+// }
+
+
+
+
+
+// let row2 = arrOriginal.filter(function(elem){
+//   return [row1[0], row1[1], row1[2]].indexOf(elem) === -1
+//   //console.log([row1[0], row1[1], row1[2]]);
+// })
+//console.log(row2);
+// returnArray = arrOriginal.filter(function(elem) {
+//   return  arrCube.indexOf(elem) === -1 
+//           && arrRow.indexOf(elem) === -1 
+//           && arrColumn.indexOf(elem) === -1
+//           && arrRow.indexOf(elem) === -1;
+// });
+//console.log(returnArray)
+
